@@ -1,0 +1,48 @@
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    div {
+        width: 100vw;
+        height: 100vh;     
+    }
+
+    div[typectrl="1"] {
+        cursor: pointer;
+    }
+
+    div[typectrl="2"]:active {
+        cursor:move;
+    }
+
+    div[typectrl="10"] {
+        cursor: pointer ;
+    }
+
+    div[typectrl="3"] {
+        cursor: text;
+    }
+
+    #maindiv {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    #uploader {
+        display:none;
+        position: absolute;
+    }
+
+    .divmap {
+        box-shadow: inset 0 0 1px 1px green;
+    }
+    .divmap:before {
+        content: attr(data-zindex);
+        font-size: 10px;
+        color: #000;
+    }
