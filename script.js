@@ -138,6 +138,7 @@ function OnMainKeyDn(ev) {
 }
 
 function OnMainKeyUp(ev) {
+	if (ev.target.getAttribute("id") == "editctrl") return;
 	if (ev.altKey == true || ev.key == 'Alt') {
 		divMap(false);
 		return;
@@ -382,6 +383,8 @@ function getTelemetry(ev, div = null) {
 		}
 		div = document.getElementById(id);
 	}
+
+	if (!div) return {};
 
 	var scrollleft = document.documentElement.scrollLeft;
 	var scrolltop = document.documentElement.scrollTop;
