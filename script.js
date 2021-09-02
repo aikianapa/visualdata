@@ -7,6 +7,8 @@ var hold = null;
 var active = 'maindiv'; // последний кликнутый элемент
 var element = null;
 
+
+
 function divMap(mode = true) {
 	divs = elementList = document.querySelectorAll('[hwndform]');
 	divs.forEach(function (div) {
